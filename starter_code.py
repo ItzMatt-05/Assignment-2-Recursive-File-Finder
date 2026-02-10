@@ -70,3 +70,6 @@ def find_infected_files(directory_path, extension=".encrypted"):
 if __name__=="__main__":
     print("Total files (breach_data):", count_files("breach_data"))
     print("Total infected (breach_data):", len(find_infected_files("breach_data")))
+    print("Finance infected:",len(find_infected_files("breach_data/Finance")))
+    print("HR infected:",len(find_infected_files("breach_data/HR")))
+    print("Sales infected:",len(find_infected_files("breach_data/Sales")))
